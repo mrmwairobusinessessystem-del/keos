@@ -1,0 +1,37 @@
+> [personal] took a loan of 50000 KES from KCB
+  POSTED [debe93f88577] loan of KES 50,000.00 received from KCB (business: personal). mpesa balance: KES 50,000.00.
+> [personal] received 8000 KES from TRM guest for bnb stay to mpesa
+  POSTED [1ae40bac5cf1] income of KES 8,000.00 from TRM guest (business: personal). mpesa balance: KES 58,000.00.
+> [agribusiness] received 500 SCR from guest for taxi to sc bank
+  POSTED [4cd4366c9f82] income of SCR 500.00 (rate 10.2 -> KES 5,100.00) from guest (business: agribusiness). bank_scr balance: KES 5,100.00.
+> [agribusiness] spent 3500 KES on fuel from mpesa
+  POSTED [803bab6dab4e] expense of KES 3,500.00 for fuel (business: agribusiness). mpesa balance: KES 54,500.00.
+> [agribusiness] bought a water pump for 18000 KES from mpesa
+  POSTED [3cfd359cf2a0] asset 'water pump' acquired for KES 18,000.00 (business: agribusiness). mpesa balance: KES 36,500.00.
+> [personal] transferred 10000 KES from mpesa to bank
+  POSTED [09a7abd53335] transfer of KES 10,000.00 mpesa -> bank_kes (business: personal). mpesa balance: KES 26,500.00.
+> [personal] paid 5000 KES loan to KCB from mpesa
+  POSTED [c3ae71595d57] loan repayment of KES 5,000.00 to KCB (business: personal). mpesa balance: KES 21,500.00.
+> [personal] paid 60000 KES loan to KCB
+  REJECTED — Repayment exceeds outstanding loan for kcb: outstanding 45,000.00 KES.; Insufficient funds in bank_kes: balance 10,000.00 < 60,000.00 KES.
+> [personal] transferred 90000 KES from mpesa to bank
+  REJECTED — Insufficient funds in mpesa: balance 21,500.00 < 90,000.00 KES.
+> [personal] received 3000 KES from Mary for eggs
+  POSTED [c1e7310671a4] income of KES 3,000.00 from Mary (business: personal). mpesa balance: KES 24,500.00.
+> [personal] received 3000 KES from Mary for eggs
+  REJECTED — Duplicate event (already processed). Ignored to prevent double-posting.
+> [personal] the weather in Voi is lovely today
+  REJECTED — I could not interpret that instruction. No money was moved.
+
+BALANCES (base: KES)
+--------------------------------------------
+asset      assets:water_pump         18,000.00
+asset      bank_kes                  10,000.00
+asset      bank_scr                   5,100.00
+asset      cash                           0.00
+asset      mpesa                     24,500.00
+expense    expense:fuel               3,500.00
+income     income:other              16,100.00
+liability  loans_payable:kcb         45,000.00
+--------------------------------------------
+Audit chain intact: True
